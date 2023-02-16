@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_hy6y8KxMEe2R8ZW8ITPfAw" targetNamespace="http://tns.tibco.com/bw/composite/CalculateIntent" name="CalculateIntent" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Q8v8Yq3TEe29NK_iubZ2sg" name="calculateintent" promote="ComponentcalculateIntent/calculateintent">
+    <sca:interface.wsdl xmi:id="_Q8v8Zq3TEe29NK_iubZ2sg" interface="http://xmlns.example.com/20230216135359PLT#wsdl.interface(calculateintent)" scaext:wsdlLocation="../Processes/calculateintent/calculateIntent.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Q-jTMK3TEe29NK_iubZ2sg" name="RestService1" path="/calculateintent" docBasePath="http://localhost:7777/CalculateIntent" docResourcePath="calculateIntent" basePath="/" connector="calculateintent.CalulateIntent" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/calculateintent.calculateIntent-calculateIntent.json">
+      <operation xmi:id="_Q-jTMq3TEe29NK_iubZ2sg" operationName="get" nickname="get-calculateintent" httpMethod="GET" notes="getCalculateIntent" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Q_zQYK3TEe29NK_iubZ2sg"/>
+      <advancedConfig xmi:id="_Q-jTMa3TEe29NK_iubZ2sg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Q-jTM63TEe29NK_iubZ2sg" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_lWkf4KxMEe2R8ZW8ITPfAw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lW4o8KxMEe2R8ZW8ITPfAw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lXBL0KxMEe2R8ZW8ITPfAw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lXK80KxMEe2R8ZW8ITPfAw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lXd3wKxMEe2R8ZW8ITPfAw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lXnowKxMEe2R8ZW8ITPfAw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lX2SQKxMEe2R8ZW8ITPfAw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lX6jsKxMEe2R8ZW8ITPfAw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lYEUsKxMEe2R8ZW8ITPfAw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_Q8AVgK3TEe29NK_iubZ2sg" name="ComponentcalculateIntent" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Q8AVga3TEe29NK_iubZ2sg" processName="calculateintent.calculateIntent"/>
+    <sca:service xmi:id="_Q8v8YK3TEe29NK_iubZ2sg" name="calculateintent">
+      <sca:interface.wsdl xmi:id="_Q8v8Ya3TEe29NK_iubZ2sg" interface="http://xmlns.example.com/20230216135359PLT#wsdl.interface(calculateintent)" scaext:wsdlLocation="../Processes/calculateintent/calculateIntent.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

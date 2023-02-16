@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CalculateIntent/Service Descriptors/calculateintent.Process-CalulateIntent.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1676375184481"
+    },
+    {
+        "jsonSchemaLocation": "/CalculateIntent/Service Descriptors/calculateintent.calculateIntent-calculateIntent.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/output"
+    }
+]}
