@@ -26,7 +26,7 @@
     <earUploadPath></earUploadPath>
     <appSpaceDesc></appSpaceDesc>
     <osgiPort></osgiPort>
-    <redeploy>false</redeploy>
+    <redeploy>true</redeploy>
     <skipTests>false</skipTests>
     <agentHost>localhost</agentHost>
     <agentAuth></agentAuth>
@@ -34,7 +34,7 @@
     <domainDesc></domainDesc>
     <keystorePassword></keystorePassword>
     <bw.Home>\bw\6.8</bw.Home>
-    <httpPort>9099</httpPort>
+    <httpPort>5022</httpPort>
     <profile>default.substvar</profile>
     <restartAppNode>false</restartAppNode>
     <appNode>CalculateIntent-AppNode</appNode>
